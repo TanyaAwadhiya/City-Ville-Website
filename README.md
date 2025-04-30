@@ -4,18 +4,18 @@
 A real-time, cross-platform web application that provides live updates on weather, traffic, and upcoming events in your city.
 
 ## Features
- **Live Weather: Displays current weather conditions for selected cities.
+ ** Live Weather: Displays current weather conditions for selected cities.
 
- **Traffic Updates: Shows current traffic status (if integrated or simulated).
+ ** Traffic Updates: Shows current traffic status (if integrated or simulated).
 
- **Upcoming Events: Lists events stored locally or fetched from a static source.
+ ** Upcoming Events: Lists events stored locally or fetched from a static source.
 
- **Cross-Platform Compatible: Works on both desktop and mobile browsers.
+ ** Cross-Platform Compatible: Works on both desktop and mobile browsers.
 
 ## Technologies Used
-  **Frontend (Client-Side) – Built with React.js
-  **Backend (Server-Side) – Built with Node.js + Express
-  **Cross-Platform Compatibility
+  ** Frontend (Client-Side) – Built with React.js
+  ** Backend (Server-Side) – Built with Node.js + Express
+  ** Cross-Platform Compatibility
 
 ## Installation
 
