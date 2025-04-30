@@ -1,0 +1,195 @@
+import { NewsItem, Department, CityService, EventItem, AlertItem } from '../types';
+
+export const newsItems: NewsItem[] = [
+  {
+    id: '1',
+    title: 'New Community Center Opening Soon',
+    description: 'The long-awaited North District Community Center will open its doors next month, offering new recreational facilities for all residents.',
+    date: '2025-06-15',
+    image: 'https://images.pexels.com/photos/1868676/pexels-photo-1868676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'update',
+    featured: true,
+  },
+  {
+    id: '2',
+    title: 'Road Construction on Main Street',
+    description: 'Starting next week, construction will begin on Main Street between Oak Avenue and Pine Boulevard. Please plan alternative routes.',
+    date: '2025-06-10',
+    image: 'https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'announcement',
+  },
+  {
+    id: '3',
+    title: 'Summer Festival Lineup Announced',
+    description: 'This year\'s summer festival will feature local bands, food vendors, and activities for all ages. Mark your calendars for July 15-17.',
+    date: '2025-06-05',
+    image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'event',
+    featured: true,
+  },
+  {
+    id: '4',
+    title: 'City Council Meeting: Budget Review',
+    description: 'The city council will meet on June 20 to review and discuss the proposed budget for the upcoming fiscal year.',
+    date: '2025-06-01',
+    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'update',
+  },
+  {
+    id: '5',
+    title: 'Flood Warning: River Heights Area',
+    description: 'Due to recent heavy rainfall, residents in the River Heights area should prepare for possible flooding in the next 48 hours.',
+    date: '2025-06-12',
+    image: 'https://images.pexels.com/photos/760984/pexels-photo-760984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    category: 'emergency',
+    featured: true,
+  },
+];
+
+export const departments: Department[] = [
+  {
+    id: 'd1',
+    name: 'Parks & Recreation',
+    description: 'Manages all city parks, recreational facilities, and community programs.',
+    contactEmail: 'parks@cityville.gov',
+    contactPhone: '(555) 123-4567',
+    hours: 'Mon-Fri: 8am-5pm',
+  },
+  {
+    id: 'd2',
+    name: 'Public Works',
+    description: 'Maintains roads, sewers, and other public infrastructure.',
+    contactEmail: 'publicworks@cityville.gov',
+    contactPhone: '(555) 123-4568',
+    hours: 'Mon-Fri: 7am-4pm',
+  },
+  {
+    id: 'd3',
+    name: 'City Hall',
+    description: 'Administrative offices and city government headquarters.',
+    contactEmail: 'info@cityville.gov',
+    contactPhone: '(555) 123-4569',
+    hours: 'Mon-Fri: 9am-5pm',
+  },
+  {
+    id: 'd4',
+    name: 'Police Department',
+    description: 'Emergency services and public safety.',
+    contactEmail: 'police@cityville.gov',
+    contactPhone: '(555) 123-4570',
+    hours: '24/7',
+  },
+  {
+    id: 'd5',
+    name: 'Fire Department',
+    description: 'Fire prevention, emergency medical services, and rescue operations.',
+    contactEmail: 'fire@cityville.gov',
+    contactPhone: '(555) 123-4571',
+    hours: '24/7',
+  },
+];
+
+export const cityServices: CityService[] = [
+  {
+    id: 's1',
+    name: 'Garbage Collection',
+    description: 'Weekly residential garbage and recycling pickup service.',
+    icon: 'trash',
+    departmentId: 'd2',
+    link: '/services/garbage',
+  },
+  {
+    id: 's2',
+    name: 'Building Permits',
+    description: 'Apply for permits for construction, renovation, and other building projects.',
+    icon: 'building',
+    departmentId: 'd3',
+    link: '/services/permits',
+  },
+  {
+    id: 's3',
+    name: 'Recreation Programs',
+    description: 'Sports, arts, and educational programs for all ages.',
+    icon: 'palette',
+    departmentId: 'd1',
+    link: '/services/recreation',
+  },
+  {
+    id: 's4',
+    name: 'Water & Utilities',
+    description: 'Water, sewer, and other utility services for residents and businesses.',
+    icon: 'droplets',
+    departmentId: 'd2',
+    link: '/services/utilities',
+  },
+  {
+    id: 's5',
+    name: 'Property Taxes',
+    description: 'Information about property tax rates, payments, and assessments.',
+    icon: 'landmark',
+    departmentId: 'd3',
+    link: '/services/taxes',
+  },
+  {
+    id: 's6',
+    name: 'Emergency Services',
+    description: 'Fire, medical, and police emergency response services.',
+    icon: 'ambulance',
+    departmentId: 'd4',
+    link: '/services/emergency',
+  },
+];
+
+export const events: EventItem[] = [
+  {
+    id: 'e1',
+    title: 'Farmers Market',
+    description: 'Local vendors selling fresh produce, crafts, and food.',
+    date: '2025-06-18',
+    time: '9:00 AM - 2:00 PM',
+    location: 'City Square Park',
+    image: 'https://images.pexels.com/photos/2907348/pexels-photo-2907348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'e2',
+    title: 'Town Hall Meeting',
+    description: 'Open forum for community members to discuss local issues.',
+    date: '2025-06-20',
+    time: '6:30 PM - 8:30 PM',
+    location: 'City Hall Auditorium',
+    image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'e3',
+    title: 'Summer Concert Series',
+    description: 'Free outdoor concert featuring local bands.',
+    date: '2025-06-25',
+    time: '7:00 PM - 9:00 PM',
+    location: 'Riverside Amphitheater',
+    image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'e4',
+    title: 'Youth Sports Registration',
+    description: 'Sign up for summer youth sports leagues.',
+    date: '2025-06-22',
+    time: '10:00 AM - 4:00 PM',
+    location: 'Community Center',
+    image: 'https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+];
+
+export const alerts: AlertItem[] = [
+  {
+    id: 'a1',
+    message: 'Flash Flood Warning in effect for low-lying areas through 10 PM tonight.',
+    type: 'warning',
+    active: true,
+  },
+  {
+    id: 'a2',
+    message: 'City Hall closed today for scheduled maintenance.',
+    type: 'info',
+    active: true,
+  },
+];
